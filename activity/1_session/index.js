@@ -34,3 +34,28 @@ console.log('Números divisibles por 7 en el rango 1 - 100: ', num_array);
 */
 
 // Ejercicio 6
+/*
+let formatter = {
+	prefix: 'Hello ',
+	append: function(string){
+		console.log(this.prefix + string);
+	}
+};
+*/
+function Formatter(){
+	this.prefix = 'Hello ';
+	this.append = function(string){
+		console.log(this.prefix + string);
+	}
+};
+
+let formatter = new Formatter();
+formatter.append('World');
+//Result: Hello World
+
+Formatter.prototype.toLowerString = function(string){
+	console.log(string.toLowerCase());
+};
+
+formatter.toLowerString("I'm Lucas");
+//Result: i’m lucas

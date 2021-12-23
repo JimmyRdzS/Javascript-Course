@@ -28,6 +28,9 @@ for (var i = 1; i <= 100; i++) {
 console.log('Números divisibles por 7 en el rango 1 - 100: ', num_array);
 
 // Ejercicio 5
+/*
+¿Cuál es la diferencia entre ejecutar un fichero JavaScript en un navegador web en formato <script> y en formato <script type=”module”>?.
+- El fichero de tipo modulo puede importar otros módulos dentro de él, siendo entonces el módulo padre de los módulos importados, permitiendo dar una estructura modular a la aplicación, y permitiendo indicar qué variables y funciones pueden ser accesadas desde afuera del módulo, esto permite un mejor manejo y control de las secciones de un módulo.
+*/
 
 // Ejercicio 6
-

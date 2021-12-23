@@ -19,6 +19,13 @@ Google Chrome - Herramientas de desarrollador:
 */
 
 // Ejercicio 4
+let num_array = [];
+for (var i = 1; i <= 100; i++) {
+	if(i%7 == 0){
+		num_array.push(i);
+	}
+}
+console.log('Números divisibles por 7 en el rango 1 - 100: ', num_array);
 
 // Ejercicio 5
 

@@ -63,8 +63,12 @@ let obj5 = {
 console.log(obj5);
 
 
-
 // Ejercicio 3
+let reversedString = originalString => originalString.split("").reverse().join("");
+
+let cadena = "Jaime Humberto";
+console.log("Cadena original => ", cadena);
+console.log("Cadena invertida => ", reversedString(cadena));
 
 // Ejercicio 4
 

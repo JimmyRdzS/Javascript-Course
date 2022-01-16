@@ -101,6 +101,26 @@ failure.addEventListener('click', event => {
 });
 
 // Ejercicio 6
+const successAsync = document.getElementById("loginSuccessAsync");
+const failureAsync = document.getElementById("loginFailureAsync");
+
+successAsync.addEventListener('click', async event => {
+  loginWitUsername("admin", "passwd").then( (resolved) => {
+        console.log(resolved);
+    })
+    .catch( (rejected) => {
+        console.log(rejected);
+    })
+});
+
+failureAsync.addEventListener('click', async event => {
+  loginWitUsername("Jaime", "1234").then( (resolved) => {
+        console.log(resolved);
+    })
+    .catch( (rejected) => {
+        console.log(rejected);
+    })
+});
 
 let loginWitUsername = (username, password) => {
   return new Promise(function (resolve, rejected) {

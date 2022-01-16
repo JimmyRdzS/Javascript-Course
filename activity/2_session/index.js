@@ -71,6 +71,23 @@ console.log("Cadena original => ", cadena);
 console.log("Cadena invertida => ", reversedString(cadena));
 
 // Ejercicio 4
+class Login {
+    constructor(username, password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    login() {
+      (this.username === "username" && this.password === "passwd") ?
+      alert("User logged in") :
+      alert("User or password incorrect");
+    }
+}
+
+const login_success = new Login("username","passwd");
+login_success.login();
+const login_failure = new Login("Jaime", "1234");
+login_failure.login();
 
 // Ejercicio 5
 

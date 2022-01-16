@@ -85,11 +85,20 @@ class Login {
 }
 
 const login_success = new Login("username","passwd");
-login_success.login();
 const login_failure = new Login("Jaime", "1234");
-login_failure.login();
 
 // Ejercicio 5
+
+const success = document.getElementById("loginSuccess");
+const failure = document.getElementById("loginFailure");
+
+success.addEventListener('click', event => {
+  login_success.login();
+});
+
+failure.addEventListener('click', event => {
+  login_failure.login();
+});
 
 // Ejercicio 6
 
